@@ -1,4 +1,4 @@
-package com.hyl.hylactivityqidongmoshi;
+package com.hyl.hylactivityqidongmoshi.fragment;
 
 
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.hyl.hylactivityqidongmoshi.R;
 
 
 /**
@@ -79,13 +81,14 @@ public class Fragment2 extends Fragment {
     public void onResume() {
         super.onResume();
         Log.e(TAG, "onResume: ++++++++++++++++++++++++++++++"+count );
-        Fragment1 fragment1=(Fragment1) ((MainActivity)getActivity()).getSupportFragmentManager().findFragmentByTag("fragment1");
-        fragment1.setListener(new Fragment1.ToActivityListener() {
-            @Override
-            public void goToActivity(String text) {
-                Toast.makeText(getActivity(), text, Toast.LENGTH_SHORT).show();
-            }
-        });
+//        Fragment1 fragment1=(Fragment1) ((MainActivity)getActivity()).getSupportFragmentManager().findFragmentByTag("fragment1");
+//        fragment1.setListener(new Fragment1.ToActivityListener() {
+//            @Override
+//            public void goToActivity(String text) {
+//                Toast.makeText(getActivity(), text, Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
     }
 
     @Override

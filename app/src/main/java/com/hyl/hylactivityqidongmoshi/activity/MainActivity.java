@@ -1,4 +1,4 @@
-package com.hyl.hylactivityqidongmoshi;
+package com.hyl.hylactivityqidongmoshi.activity;
 
 import android.content.Intent;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.Toast;
+
+import com.hyl.hylactivityqidongmoshi.R;
+import com.hyl.hylactivityqidongmoshi.fragment.Fragment1;
+import com.hyl.hylactivityqidongmoshi.fragment.Fragment2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,17 +44,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         /*获取碎片管理器*/
-   /*     manager = getSupportFragmentManager();
-        FragmentTransaction ft= manager.beginTransaction();*//*获取事务*//*
+        manager = getSupportFragmentManager();
+        FragmentTransaction ft= manager.beginTransaction();//获取事务
         ft.replace(R.id.frameLayout_main,list.get(0),"fragment1");
-        ft.commit();*/
-             manager = getSupportFragmentManager();
-        FragmentTransaction ft= manager.beginTransaction();/*获取事务*/
-        ft.add(R.id.frameLayout_main,list.get(0),"fragment1");
-        ft.add(R.id.frameLayout_main,list.get(1),"fragment2");
-        ft.hide(list.get(1));
-        ft.show(list.get(0));
         ft.commit();
+//             manager = getSupportFragmentManager();
+//        FragmentTransaction ft= manager.beginTransaction();/*获取事务*/
+//        ft.add(R.id.frameLayout_main,list.get(0),"fragment1");
+//        ft.add(R.id.frameLayout_main,list.get(1),"fragment2");
+//        ft.hide(list.get(1));
+//        ft.show(list.get(0));
+//        ft.commit();
 
    /*  可实现
     ((Fragment1)list.get(0)).setListener(new Fragment1.ToActivityListener() {
@@ -84,14 +87,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,InsActivity.class));
     }
     public void replaceFragment(View v){
-//        FragmentManager manager = getSupportFragmentManager();/*获取碎片管理器*/
-   /*     FragmentTransaction ft=manager.beginTransaction();*//*获取事务*//*
+        FragmentManager manager = getSupportFragmentManager();//获取碎片管理器
+        FragmentTransaction ft=manager.beginTransaction();//获取事务
         ft.replace(R.id.frameLayout_main,list.get(1),"fragment2");
-        ft.commit();*/
-             FragmentTransaction ft=manager.beginTransaction();//获取事务
-        ft.hide(list.get(0));
-        ft.show(list.get(1));
         ft.commit();
+//             FragmentTransaction ft=manager.beginTransaction();//获取事务
+//        ft.hide(list.get(0));
+//        ft.show(list.get(1));
+//        ft.commit();
 
     }
     @Override

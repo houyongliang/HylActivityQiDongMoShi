@@ -1,4 +1,4 @@
-package com.hyl.hylactivityqidongmoshi;
+package com.hyl.hylactivityqidongmoshi.fragment;
 
 
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
+import com.hyl.hylactivityqidongmoshi.R;
 
 
 /**
@@ -84,7 +84,7 @@ public class Fragment1 extends Fragment {
     public void onPause() {
         super.onPause();
         Log.e(TAG, "onPause: ++++++++++++++++++++++++++++++++++++"+count );
-        listener.goToActivity("你真帅");
+//        listener.goToActivity("你真帅");
 //        Bundle bd=new Bundle();
 //        bd.putString("data","你真帅");
 ////        mFragment2.setArguments(bd);
