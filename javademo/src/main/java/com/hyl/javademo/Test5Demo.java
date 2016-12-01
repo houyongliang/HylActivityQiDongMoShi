@@ -25,4 +25,19 @@ public class Test5Demo {
         return sum;
 
     }
+    public static long getToger(int n){
+        int fac = 1,sum=0;
+       if(n<1)
+           return 0;
+
+        for (int i = 0; i < n; i++) {
+            for (int i1 =1; i1 <= fac; i1++) {
+                fac*=i1;
+            }
+
+            sum=sum+fac;
+        }
+
+        return sum;
+    }
 }

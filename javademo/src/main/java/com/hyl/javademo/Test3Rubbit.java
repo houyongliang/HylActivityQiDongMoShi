@@ -8,7 +8,7 @@ package com.hyl.javademo;
 
 public class Test3Rubbit {
     public static void main(String[] args) {
-        int  a=1;
+        int a=0;
         int b=1;
         int c=0;
         for (int i = 0; i < 12; i++) {
