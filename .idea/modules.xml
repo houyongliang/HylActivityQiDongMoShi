@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/HylActivityQiDongMoShi.iml" filepath="$PROJECT_DIR$/HylActivityQiDongMoShi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/javademo/javademo.iml" filepath="$PROJECT_DIR$/javademo/javademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadlibdemo/threadlibdemo.iml" filepath="$PROJECT_DIR$/threadlibdemo/threadlibdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/zhurudemo/zhurudemo.iml" filepath="$PROJECT_DIR$/zhurudemo/zhurudemo.iml" />
     </modules>
   </component>
