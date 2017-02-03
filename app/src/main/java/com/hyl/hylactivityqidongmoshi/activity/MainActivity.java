@@ -1,6 +1,8 @@
 package com.hyl.hylactivityqidongmoshi.activity;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -24,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
     private FrameLayout frameLayout;
     private List<Fragment> list=null;
     private FragmentManager manager;
+    Handler mHandler=new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +39,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         frameLayout = (FrameLayout) findViewById(R.id.frameLayout_main);
         initFragment();/*初始化fragment*/
+        Message message=Message.obtain();
+        message.what=1;
+//        mHandler.sendEmptyMessageDelayed(message);
+        mHandler.post(new Runnable() {
+            @Override
+            public void run() {
 
+            }
+        });
         count++;
         Log.e(TAG, "onCreate:count "+count);
     }

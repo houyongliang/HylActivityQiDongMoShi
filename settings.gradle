@@ -1,1 +1,1 @@
-include ':app', ':javademo', ':zhurudemo', ':threadlibdemo'
+include ':app', ':javademo', ':zhurudemo', ':threadlibdemo', ':handlerdemo'
